@@ -20,7 +20,7 @@ def Stdev(df, mean):
         s += x ** 2
     return n * s
 def lsrl(m, yint, price):
-    return m * price + yint
+    return -1 * m * price + yint
 
 for q in range(len(date_train)-1):
 	data = f.get('jpm', start=date_train[q], end=date_train[q+1])
